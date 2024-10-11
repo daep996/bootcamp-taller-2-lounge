@@ -2,8 +2,10 @@ import React from "react"
 
 const informacion = () => {
     retur (
-        <div>informacion</div>
+        <div>
+            <h1>informacion</h1>
+        </div>
     )
 }
 
-export default informacion 
+export default informacion;
