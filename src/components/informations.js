@@ -4,6 +4,7 @@ const informacion = () => {
     retur (
         <div>
             <h1>informacion</h1>
+            <p>Página en construcción</p>
         </div>
     )
 }
