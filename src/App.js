@@ -7,12 +7,14 @@ import { store } from './store/store'
 
 import Home from './components/home';
 import Galeria from './components/galeria';
+import Menu from "./components/Menu";
 
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
+      <Menu/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/galeria" element={<Galeria/>}/>
