@@ -6,6 +6,7 @@ import './App.css';
 import { store } from './store/store'
 
 import Home from './components/home';
+import Galeria from './components/galeria';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          {/* <Route path="/galeria" element={<Galeria/>}/> */}
+          <Route path="/galeria" element={<Galeria/>}/>
           {/* <Route path="/detalle-producto" element={<Detalle/>}/> */}
           {/* <Route path="/contacto" element={<Contacto/>}/> */}
         </Routes>
