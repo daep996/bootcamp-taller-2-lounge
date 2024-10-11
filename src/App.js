@@ -7,6 +7,7 @@ import { store } from './store/store'
 
 import Home from './components/home';
 import Galeria from './components/galeria';
+import Contacto from "./components/Contacto";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/galeria" element={<Galeria/>}/>
           {/* <Route path="/detalle-producto" element={<Detalle/>}/> */}
-          {/* <Route path="/contacto" element={<Contacto/>}/> */}
+          {<Route path="/contacto" element={<Contacto/>}/>}
         </Routes>
       </BrowserRouter>
     </Provider>
