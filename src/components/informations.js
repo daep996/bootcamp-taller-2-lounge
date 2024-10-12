@@ -6,9 +6,12 @@ const styles = {
       border: '1px solid #ccc',
       padding: '20px',
       borderRadius: '10px',
-      width: '300px',
+      width: '800px',
       textAlign: 'left',
       backgroundColor: '#f9f9f9',
+      margin: 'auto',
+      marginTop: '2rem',
+      marginBottom: '2rem',
     },
   };
   

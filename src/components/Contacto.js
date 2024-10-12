@@ -4,7 +4,7 @@ import React from "react"
 const Contacto = () => {
     return (
         <div class="container">
-            <div class="contact__wrapper shadow-lg mt-n9">
+            <div class="contact__wrapper shadow-lg mt-n9 p-5">
                 <div class="row no-gutters">
                     <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
                         <h3 className="fw-normal mb-5 text-white" style={{color: '#4835d4'}}>Contactanos</h3>
