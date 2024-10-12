@@ -1,9 +1,19 @@
 import React from "react"
 
 const Informacion = () => {
-
+const styles = {
+    container: {
+      border: '1px solid #ccc',
+      padding: '20px',
+      borderRadius: '10px',
+      width: '300px',
+      textAlign: 'left',
+      backgroundColor: '#f9f9f9',
+    },
+  };
+  
     return (
-        <div>
+        <div style={styles.container}>
             <h1>información</h1>
             <p>
                 Página en construcción
