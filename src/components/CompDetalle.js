@@ -13,6 +13,8 @@ function CompDetalle() {
     }
 
     return (
+        <>
+        
         <Container className="my-4">
             <Row className="justify-content-center">
                 <Col md={8}>
@@ -44,6 +46,7 @@ function CompDetalle() {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 }
 
