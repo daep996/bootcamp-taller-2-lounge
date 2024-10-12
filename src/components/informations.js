@@ -3,20 +3,12 @@ import React from "react"
 const Informacion = () => {
 const styles = {
     container: {
-      border: '1px solid #ccc',
-      padding: '20px',
-      borderRadius: '10px',
       width: '800px',
-      textAlign: 'left',
-      backgroundColor: '#f9f9f9',
-      margin: 'auto',
-      marginTop: '2rem',
-      marginBottom: '2rem',
     },
   };
-  
+
     return (
-        <div style={styles.container}>
+        <div className="container bg-light border rounded-3 p-4 mx-auto my-4" style={styles.container} >
             <h1>información</h1>
             <p>
                 Página en construcción
