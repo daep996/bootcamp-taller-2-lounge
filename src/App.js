@@ -8,9 +8,9 @@ import { store } from './store/store'
 import Home from './components/home';
 import Galeria from './components/galeria';
 import Menu from "./components/Menu";
-import Contacto from "./components/Contacto";
 import CompDetalle from "./components/CompDetalle";
 import Footer from "./components/Footer";
+import Contacto from "./components/Contacto";
 
 
 function App() {
@@ -21,9 +21,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/galeria" element={<Galeria/>}/>
-          {<Route path="/contacto" element={<Contacto/>}/>}
           <Route path="/detalle-producto" element={<CompDetalle/>}/>
-          {/* <Route path="/contacto" element={<Contacto/>}/> */}
+          <Route path="/contacto" element={<Contacto/>}/>
         </Routes>
       <Footer/> 
       </BrowserRouter>
