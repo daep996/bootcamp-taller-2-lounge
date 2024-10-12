@@ -38,10 +38,10 @@ const Galeria = () => {
 
     return (
         <>
-            <h2>Galeria</h2>
             {products.length === 0 && <p className="text-center mb-4">No hay productos...</p>}
             {products.length > 0 && (
                 <Container className="my-4">
+                    <h2>Galeria</h2>
                     <Row xs={1} md={2} lg={3} className="g-4">
                     {currentProducts.map((product) => (
                         <Col key={product.id}>
