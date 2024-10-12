@@ -8,7 +8,7 @@ const Menu = () => {
             <nav className ="navbar navbar-expand-lg bg-body-tertiary">
                 <NavLink className={({ isActive }) => (isActive ? "navbar-brand" : null)} to='/'>Home</NavLink>
                 <NavLink className={({ isActive }) => (isActive ? "nav-link active" : null)} to='/galeria'>Galeria</NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "nav-link active" : null)} to='detalle-producto'>Detalle-Producto</NavLink>
+                {/* <NavLink className={({ isActive }) => (isActive ? "nav-link active" : null)} to='detalle-producto'>Detalle-Producto</NavLink> */}
                 <NavLink className={({ isActive }) => (isActive ? "nav-link active" : null)} to='contacto'>Contacto</NavLink>
             </nav>
         </>
