@@ -8,6 +8,7 @@ import { store } from './store/store'
 import Home from './components/home';
 import Galeria from './components/galeria';
 import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
           {/* <Route path="/detalle-producto" element={<Detalle/>}/> */}
           {/* <Route path="/contacto" element={<Contacto/>}/> */}
         </Routes>
+      <Footer/> 
       </BrowserRouter>
     </Provider>
+    
   );
 }
 
