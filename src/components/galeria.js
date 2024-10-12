@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-
+import { Link } from "react-router-dom";
 import { setData, setId } from "../store/dataSlice";
 
 import { Card, Container, Row, Col, Pagination } from 'react-bootstrap'
@@ -45,6 +45,7 @@ const Galeria = () => {
                     <Row xs={1} md={2} lg={3} className="g-4">
                     {currentProducts.map((product) => (
                         <Col key={product.id}>
+                             <Link to="/detalle-producto" onClick={() => dispatch(setId(product.id))}>
                         <Card className="h-100 text-body-secondary" onClick={cardSelected(product.id)}>
                             <Card.Img
                                 variant="top"
@@ -66,6 +67,7 @@ const Galeria = () => {
                             </Card.Text>
                             </Card.Body>
                         </Card>
+                        </Link>
                         </Col>
                     ))}
                     </Row>

@@ -8,6 +8,7 @@ import { store } from './store/store'
 import Home from './components/home';
 import Galeria from './components/galeria';
 import Menu from "./components/Menu";
+import CompDetalle from "./components/CompDetalle";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/galeria" element={<Galeria/>}/>
-          {/* <Route path="/detalle-producto" element={<Detalle/>}/> */}
+          <Route path="/detalle-producto" element={<CompDetalle/>}/>
           {/* <Route path="/contacto" element={<Contacto/>}/> */}
         </Routes>
       </BrowserRouter>
