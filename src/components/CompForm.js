@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Form, FormGroup, FormCheck, Button, Col,Row } from "react-bootstrap";
+import React from "react";
+import { Form, FormGroup, FormCheck, Button, Col,Row} from "react-bootstrap";
 
 function CompForm() {
   const valForma = (event) => {
@@ -10,25 +10,35 @@ function CompForm() {
     if (form.checkValidity() === false) {
       console.log("El formulario no es valido");
     } else {
-      console.log("email:" + form.elements.email.value);
-      console.log("password" + form.elements.password.value);
+      console.log("email:" + form.elements.email);
+      /*console.log("password" + form.elements.password.value);*/
 
       var data = {
+        firstName: form.elements.firstName.value,
+        lastName: form.elements.firstName.value,
         email: form.elements.email.value,
-        password: form.elements.password.value,
+        phone: form.elements.phone.value,
+        adress: form.elements.adress.value,
+        city: form.elements.city.value,
+        state: form.elements.state.value,
+        message: form.elements.message.value,
+        chktpd: form.elements.chktpd.value,
+
+      
       };
     }
   };
 
+
   return (
     <>
-      <Form onSubmit={valForma} validated={true}>
+        <Form onSubmit={valForma} validated={true}>
         <FormGroup as={Col} className="mb-3"controlId="idname">
           <Form.Label>Nombre</Form.Label>
           <Form.Control
-            type="name"
+            type="text"
             placeholder="Pepito"
-            name="name"
+            name="firstName"
             required
           />
           <Form.Control.Feedback>Nombre valido</Form.Control.Feedback>
@@ -39,7 +49,7 @@ function CompForm() {
           <Form.Control
             type="lastname"
             placeholder="Perez Perez"
-            name="lastname"
+            name="lastName"
             required
           />
           <Form.Control.Feedback>Apellido valido</Form.Control.Feedback>
@@ -58,30 +68,41 @@ function CompForm() {
         <FormGroup  as={Col}  className="mb-3"controlId="idphone">
           <Form.Label>Número telefonico</Form.Label>
           <Form.Control
-            type="phone"
+            type="number"
             placeholder="601-1111111"
             name="phone"
             required
           />
         </FormGroup>
         <Row className="mb-3">
+            <Form.Group as={Col} controlId="idAdress">
+                <Form.Label>Dirección</Form.Label>
+                <Form.Control
+                type="adress"
+                placeholder="direccion"
+                name="adress"
+                required            
+                />
+            </Form.Group>
+
             <Form.Group as={Col} controlId="idCity">
                 <Form.Label>Ciudad</Form.Label>
-                <Form.Control />
+                <Form.Control
+                type="City"
+                placeholder="Ciudad"
+                name="city"
+                required />
             </Form.Group>
 
             <Form.Group as={Col} controlId="idState">
                 <Form.Label>Departamento</Form.Label>
-                <Form.Select defaultValue="Choose...">
+                <Form.Select name="state" required defaultValue="Choose...">
                     <option>Choose...</option>
                     <option>...</option>
                 </Form.Select>
             </Form.Group>
 
-            <Form.Group as={Col} controlId="idZip">
-                <Form.Label>Codigo postal</Form.Label>
-                <Form.Control />
-            </Form.Group>
+
         </Row>
 
         <FormGroup className="mb-3"controlId="idmsgeq">
@@ -113,8 +134,9 @@ function CompForm() {
         <Button variant="warning" type="submit">
           Enviar
         </Button>
-      </Form>
+        </Form>
 
+       
       
     </>
   );
