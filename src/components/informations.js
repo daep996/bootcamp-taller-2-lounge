@@ -14,7 +14,7 @@ const styles = {
 const informacion = () => {
 
     return (
-        <div>
+        <div style={styles.container}>
             <h1>información</h1>
             <p>
                 Página en construcción
