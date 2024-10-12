@@ -14,7 +14,7 @@ function CompFormConf () {
     };
 
     
-    const {inputValues: { firstName, lastName, email, address, city, state, phone }} = this.props;
+    const {data: { firstName, lastName, email, address, city, state, phone }} = this.props;
 
     return(
             <Container>
@@ -27,8 +27,8 @@ function CompFormConf () {
                 <p>Ciudad: {city}</p>
                 <p>Departamente: {state}</p>
                 <p>Telefono: {phone}</p>
-                <Button variant="secondary" onClick={this.back}>Back</Button>{' '}
-                <Button variant="primary">Confirm</Button>
+                <Button variant="secondary" onClick={this.back}>Cancelar</Button>{' '}
+                <Button variant="primary">Confirmar</Button>
             </Container>
         )
     }
